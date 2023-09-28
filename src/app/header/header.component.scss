@@ -1,0 +1,17 @@
+@import "../../stylesheets/reset.scss";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: sandybrown;
+}
+
+.navbtns {
+    width: 100%;
+  ul {
+    @include reset-list;
+    display: flex;
+    justify-content: space-between;
+  }
+}

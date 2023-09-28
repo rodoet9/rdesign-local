@@ -13,9 +13,11 @@ import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { PortofolioComponent } from './portofolio/portofolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ServicesComponent, PortofolioComponent, ContactComponent],
+  declarations: [AppComponent, HomeComponent, ServicesComponent, PortofolioComponent, ContactComponent, HeaderComponent, FooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
