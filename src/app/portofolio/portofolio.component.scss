@@ -1,0 +1,56 @@
+#portofolio {
+  margin-top: 100px;
+
+  .container {
+    .row {
+      .col-md-12 {
+        h2 {
+          font-size: 40px;
+          font-weight: 400;
+          color: #272727;
+          text-transform: uppercase;
+          letter-spacing: 10px;
+          word-spacing: 5px;
+          margin-bottom: 36px;
+
+          span {
+            color: #b19777;
+          }
+        }
+      }
+    }
+    .row {
+      .col-md-6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .projects-card {
+          max-width: 630px;
+          img {
+            width: 630px;
+            height: 500px;
+          }
+        }
+      }
+    }
+    .row {
+      .col-md-12 {
+        .more-projects {
+          display: flex;
+          justify-content: center;
+          margin-top: 44px;
+          text-transform: uppercase;
+          h2 {
+            font-size: 28px;
+            font-weight: 400;
+            color: #272727;
+          }
+          span {
+            color: #b19777;
+          }
+        }
+      }
+    }
+  }
+}

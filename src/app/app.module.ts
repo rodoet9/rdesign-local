@@ -16,6 +16,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgIf } from '@angular/common';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { NgIf } from '@angular/common';
     MatDividerModule,
     NgbCarouselModule,
     NgIf,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
