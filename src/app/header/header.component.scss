@@ -1,17 +1,26 @@
 @import "../../stylesheets/reset.scss";
 
 nav {
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: sandybrown;
-}
+  position: absolute;
+  z-index: 1;
 
-.navbtns {
-    width: 100%;
-  ul {
-    @include reset-list;
-    display: flex;
-    justify-content: space-between;
+  .navbtns {
+
+    ul {
+      @include reset-list;
+      display: flex;
+      margin-right: 150px;
+
+      li {
+        margin-right: 24px;
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+      }
+    }
   }
 }
