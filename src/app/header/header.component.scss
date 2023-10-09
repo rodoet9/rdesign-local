@@ -7,20 +7,35 @@ nav {
   align-items: center;
   position: absolute;
   z-index: 1;
+  background-color: #121f28da;
+  // background-color: #121f28;
+
+  // .logo {
+  //   position: absolute;
+  //   z-index: 1;
+  //   top: 0;
+  //   left: 0;
+  // }
 
   .navbtns {
-
+    height: 80px;
+    display: flex;
+    align-items: center;
     ul {
       @include reset-list;
       display: flex;
-      margin-right: 150px;
+      margin-right: 200px;
 
       li {
         margin-right: 24px;
-        font-weight: 700;
+        // font-weight: 700;
         font-size: 20px;
         color: white;
       }
     }
   }
+}
+
+nav:hover {
+  background-color: #121f28;
 }

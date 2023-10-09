@@ -18,6 +18,8 @@ import { FooterComponent } from './footer/footer.component';
 import { NgIf } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +41,7 @@ import { MatCardModule } from '@angular/material/card';
     NgbCarouselModule,
     NgIf,
     MatCardModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
