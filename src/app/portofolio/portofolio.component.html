@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-4">
         <mat-card class="projects-card">
           <img
             mat-card-image
@@ -21,11 +21,34 @@
             </p>
           </mat-card-content>
           <mat-card-actions>
-            <button mat-raised-button>More details</button>
+            <button mat-raised-button (click)="openDialog()">
+              More details
+            </button>
           </mat-card-actions>
         </mat-card>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-4">
+        <mat-card class="projects-card">
+          <img
+            mat-card-image
+            src="../../assets/pexels-allan-franca-carmo-3465604.png"
+            alt="Photo of a Shiba Inu"
+          />
+          <mat-card-content>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              arcu nisl, hendrerit et elementum non, mollis nec urna. Nulla
+              dignissim dui neque, eget interdum nulla pulvinar non.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button routerLink="/project">
+              More details
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+      <div class="col-md-4">
         <mat-card class="projects-card">
           <img
             mat-card-image
@@ -40,7 +63,9 @@
             </p>
           </mat-card-content>
           <mat-card-actions>
-            <button mat-raised-button>More details</button>
+            <button mat-raised-button>
+              More details
+            </button>
           </mat-card-actions>
         </mat-card>
       </div>
@@ -48,7 +73,9 @@
     <div class="row">
       <div class="col-md-12">
         <div class="more-projects">
-          <h2>More <span> projects</span></h2>
+          <a routerLink="/project">
+            <h2>More <span> projects</span></h2></a
+          >
         </div>
       </div>
     </div>

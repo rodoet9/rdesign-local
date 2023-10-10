@@ -1,4 +1,41 @@
+@import "../stylesheets/reset.scss";
+
 body {
   overflow-x: hidden;
   background-color: whitesmoke;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  background-color: #121f28da;
+
+  .navbtns {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    ul {
+      @include reset-list;
+      display: flex;
+      margin-right: 200px;
+
+      li {
+        margin-right: 24px;
+        font-size: 20px;
+        color: white;
+      }
+      li:hover {
+        cursor: pointer;
+        color: #b19777;
+      }
+    }
+  }
+}
+
+nav:hover {
+  background-color: #121f28;
 }

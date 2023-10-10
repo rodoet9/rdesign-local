@@ -18,7 +18,33 @@ import { FooterComponent } from './footer/footer.component';
 import { NgIf } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { ProjectComponent } from './portofolio/project/project.component';
+
+import { MatDialogModule } from '@angular/material/dialog';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: HomeComponent,
+    title: 'Home page',
+  },
+  {
+    path: 'services',
+    component: ServicesComponent,
+    title: 'Services page',
+  },
+  {
+    path: 'portofolio',
+    component: PortofolioComponent,
+    title: 'Portofolio page',
+  },
+  {
+    path: 'contact-us',
+    component: ContactComponent,
+    title: 'Contact us page',
+  },
+];
 
 @NgModule({
   declarations: [
@@ -29,6 +55,7 @@ import { RouterModule } from '@angular/router';
     ContactComponent,
     HeaderComponent,
     FooterComponent,
+    ProjectComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +68,10 @@ import { RouterModule } from '@angular/router';
     NgbCarouselModule,
     NgIf,
     MatCardModule,
-    RouterModule,
+    MatDialogModule,
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],

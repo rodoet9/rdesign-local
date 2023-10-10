@@ -12,12 +12,29 @@
     <title>RDesign</title>
   </head>
   <body>
-    <app-header></app-header>
-    <app-home></app-home>
-    <app-services></app-services>
-    <app-portofolio></app-portofolio>
-    <app-contact></app-contact>
-    <!-- <router-outlet></router-outlet> -->
+    <nav>
+      <div class="logo">
+        <img
+          src="../../assets/rdesignlogo-removebg-preview.png"
+          alt="RDesign Logo"
+          width="80"
+          height="80"
+        />
+      </div>
+      <div class="navbtns">
+        <ul>
+          <li><a (click)="onClickScrollToHome()">HOME</a></li>
+          <li><a (click)="onClickScrollToServices()">SERVICES</a></li>
+          <li><a (click)="onClickScrollToPortofolio()">PORTOFOLIO</a></li>
+          <li><a (click)="onClickScrollToContactUs()">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <app-home id="home"></app-home>
+    <app-services id="services"></app-services>
+    <app-portofolio id="portofolio"></app-portofolio>
+    <app-contact id="contact-us"></app-contact>
     <app-footer></app-footer>
   </body>
 </html>
